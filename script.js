@@ -8,18 +8,9 @@ const app = {
       "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=";
     let nyKey = "zofoKJ5CztJjD8YU4MAA88he8HrwnFso";
     const finalURL = nyURl + nyKey;
-    console.log(finalURL);
     fetch(finalURL)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        for (let i = 0; i < data.results.length; i++) {
-          console.log(
-            data.results[i].title,
-            data.results[i].author,
-            data.results[i].description
-          );
-        }
         app.appendData(data);
       })
       .catch((error) => console.log(error));

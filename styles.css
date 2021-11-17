@@ -1,0 +1,30 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fanwood Text", serif;
+}
+
+.content {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fefbf3;
+  color: rgb(38, 38, 38);
+}
+.content h1 {
+  margin-top: 5vh;
+  justify-self: flex-start;
+  font-family: "Quattrocento", serif;
+}
+.bookDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
